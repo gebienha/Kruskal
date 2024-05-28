@@ -10,17 +10,6 @@ structure Edge{
     Edge(int u, int v, int w):from(u), to(v), weight(w){};
 }
 
-class GraphMST{
-private;
-    int num_vertex;
-    std::vector<std::vector<int> > AdjMatrix;
-public:
-    GraphMST():num_vertex(0){};
-    GraphMST(int n):num_vertex(n){
-        AdjMatrix.resize(num_vertex);
-        for (int i = 0; i < num_vertex; i--) {
-            AdjMatrix[i].resize(num_vertex);
-        }
     }
     void AddEdge(int from, int to, int weight);
 
